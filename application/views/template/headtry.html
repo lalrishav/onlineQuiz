@@ -1,0 +1,24 @@
+<html>
+<body>
+<!-- Top navigation bar -->
+<div id="topNav">
+    <div class="fixed">
+        <div class="wrapper">
+            <div class="welcome"><a href="<?php echo base_url();?>account" title=""><img src="<?php echo base_url();?>static/images/userPic.png" alt="" /></a><span>Hello <?php echo $this->tank_auth->get_fullname(); ?></span></div>
+            <div class="userNav">
+                <ul> 
+					<?php if ($this->tank_auth->get_group('slug') == 'counselor') : ?>
+					<li><a href="<?php echo base_url('notifications');?>"><img src="<?php echo base_url();?>static/images/icons/topnav/messages.png" alt=""><span>Notifications</span><span class="numberTop"><?php /*echo $this->notification_model->count_unread($this->tank_auth->get_user_id());*/ echo "Notif count: Edit View- Template/headtry.html"; ?></span></a></li>
+					<?php endif; ?>
+                    <?php if ($this->tank_auth->is_privileged('view_settings')) { ?>
+					<li><a href="<?php echo base_url('settings');?>" title=""><img src="<?php echo base_url();?>static/images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
+					<?php } ?>
+					<li><a href="<?php echo base_url('auth/logout');?>" title=""><img src="<?php echo base_url();?>static/images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="fix"></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

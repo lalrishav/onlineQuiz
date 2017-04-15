@@ -1,0 +1,201 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Online Examination</title>
+	<meta name="description" content="online_exam">
+	<!-- Latest compiled and minified CSS -->
+	 <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+ 	<script type="text/javascript">
+
+
+
+	var divs = ["q1", "q2", "q3", "q4", "q5"];
+    var visibleDivId = one;
+    var counter = 1;
+   
+    function next()
+    {
+var dd="x"+counter;
+    	if(counter!=20)
+    	   counter++;
+        toggleVisibility(counter);
+
+        document.getElementById(dd).classList.remove("btn-danger");
+    	document.getElementById(dd).classList.add("btn-info");
+    }
+     function next1()
+    {
+    	var xx="options"+counter;
+    	if(document.getElementsbyname(xx).value==)
+   
+var dd="x"+counter;
+
+    	if(counter!=20)
+    	   counter++;
+
+    	document.getElementById(dd).classList.remove("btn-danger");
+    	document.getElementById(dd).classList.add("btn-success");
+
+
+    
+    toggleVisibility(counter);
+    }
+    function prev()
+    {
+
+    	//alert(counter);
+    	if(counter!=1)
+    		counter--;
+
+
+
+    		//alert(counter);
+
+    	  
+    toggleVisibility(counter);
+    }
+
+    function toggleVisibility(divId) {
+    	counter=divId;
+    	var temp="q"+counter;
+      visibleDivId=temp;
+
+       for(var i = 0; i < divs.length; i++) 
+       {
+        divId = divs[i];
+        div = document.getElementById(divId);
+        if(temp === divId) 
+          div.style.display = "block";
+         else 
+          div.style.display = "none";
+        
+      
+      } }
+
+
+	</script>
+</head>
+	<style>
+	body{
+		padding-top: 40px;
+	}
+	</style>
+<body onload=toggleVisibility(1)>
+	<div class="jumbotron">
+  		<div class="container text-center">
+            <h1>Online Examination Portal</h1>
+        </div><!-- End container -->
+    </div><!-- End jumbotron-->
+<!--<iframe width="175" height="90" src="https://w2.countingdownto.com/1279049" frameborder="0"></iframe>-->
+<section>
+	<div class="well">
+		<div class="container text-justify">
+			<div class="main_div">
+			<table border="1">
+				<col width="1000">
+				<col width="300">
+				<tr>
+				<td height="250">
+					<div class="inner_div">
+							<form>
+							<div id="q1">
+							<h3>&nbsp&nbspThis is the question one</h3>
+							&nbsp<input type="radio" name="options1" value="opt1"> Answer 1<br>
+							&nbsp<input type="radio" name="options1" value="opt2"> Answer 2<br>
+							&nbsp<input type="radio" name="options1" value="opt3"> Answer 3<br>
+							&nbsp<input type="radio" name="options1" value="opt4"> Answer 4<br>
+							</div>
+							<div id="q2" style="display: none;">
+							<h3>&nbsp&nbspThis is the question two</h3>
+							&nbsp<input type="radio" name="options2" value="opt1"> Answer 1<br>
+							&nbsp<input type="radio" name="options2" value="opt2"> Answer 2<br>
+							&nbsp<input type="radio" name="options2" value="opt3"> Answer 3<br>
+							&nbsp<input type="radio" name="options2" value="opt4"> Answer 4<br>
+							</div>
+							<div id="q3" style="display: none;">
+							<h3>&nbsp&nbspThis is the question three</h3>
+							&nbsp<input type="radio" name="options3" value="opt1"> Answer 1<br>
+							&nbsp<input type="radio" name="options3" value="opt2"> Answer 2<br>
+							&nbsp<input type="radio" name="options3" value="opt3"> Answer 3<br>
+							&nbsp<input type="radio" name="options3" value="opt4"> Answer 4<br>
+							</div>
+							<div id="q4" style="display: none;">
+							<h3>&nbsp&nbspThis is the question four</h3>
+							&nbsp<input type="radio" name="options4" value="opt1"> Answer 1<br>
+							&nbsp<input type="radio" name="options4" value="opt2"> Answer 2<br>
+							&nbsp<input type="radio" name="options4" value="opt3"> Answer 3<br>
+							&nbsp<input type="radio" name="options4" value="opt4"> Answer 4<br>
+							</div>
+							</form>
+					</div>
+				</td>
+					<td height="250"><h3><label>&nbsp&nbsp Question No.</label></h3>
+					<table>
+						<tr>
+							
+							<td>
+								<button id="x1" class="btn btn-danger" onclick="toggleVisibility(1);">Q1</button>
+							</td>
+							
+							<td>
+								<button id="x2" class="btn btn-danger"onclick="toggleVisibility(2);">Q2</button>
+							</td>
+							
+						</tr>
+						<tr>
+							
+							<td>
+								<button id="x3" class="btn btn-danger"onclick="toggleVisibility(3);">Q3</button>
+							</td>
+							
+							
+							<td>
+								<button id="x4" class="btn btn-danger" onclick="toggleVisibility(4);">Q4</button>
+							</td>
+							
+						</tr>
+						<tr>
+							<td>
+								<button id="x5"class="btn btn-danger" onclick="toggleVisibility(5);">Q5</button>
+							</td>
+							<td>
+								<button class="btn btn-danger" onclick="toggleVisibility(6);">Q6</button>
+							</td>
+						</tr>
+						
+					</table>
+
+				</td>
+					</div>
+				</tr>
+			</table>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="well">
+		<div class="container text-justify">
+		<form>	
+			<table width="100%">
+				<tr>
+					<td width="25%"></td>
+					<td width="25%"><a href="#" onclick="prev()">
+					<button type="button" name="prev" class="btn btn-primary">Previous</button></td></a>
+					<td width="25%"><a href="#" onclick="next1()">
+					<button  type="button" name="sub" class="btn btn-success">Save and continue</button></td></a>
+					<td width="25%"><a href="#" onclick="next()">
+					<button type="button" name="nxt" class="btn btn-primary">Next</button></td></a>
+					
+				</tr>
+			</table>
+		</form>
+		</div>
+	</div>
+</section>
+</body>
+</html>

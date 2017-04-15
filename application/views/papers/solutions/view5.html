@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="robots" content="noindex" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<title><?php echo $this->config->item('site_name'); ?> | <?php echo $page_title; ?></title>
+
+<link href="<?php echo base_url();?>static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url();?>static/css/main.css" rel="stylesheet" type="text/css" />
+<!--<link href='http://fonts.googleapis.com/css?family=Cuprum' rel='stylesheet' type='text/css' />-->
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/jquery.min.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/spinner/jquery.mousewheel.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/spinner/ui.spinner.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/jquery-ui.min.js"></script> 
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/wysiwyg/jquery.wysiwyg.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/wysiwyg/wysiwyg.image.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/wysiwyg/wysiwyg.link.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/wysiwyg/wysiwyg.table.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/flot/jquery.flot.orderBars.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/flot/jquery.flot.pie.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/flot/excanvas.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/flot/jquery.flot.resize.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/tables/jquery.dataTables.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/tables/colResizable.min.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/forms.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/autogrowtextarea.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/autotab.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/jquery.validationEngine-en.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/jquery.validationEngine.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/jquery.dualListBox.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/chosen.jquery.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/jquery.inputlimiter.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/forms/jquery.tagsinput.min.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/other/calendar.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/other/elfinder.min.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/uploader/plupload.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/uploader/plupload.html5.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/uploader/plupload.html4.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/uploader/jquery.plupload.queue.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.progress.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.jgrowl.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.tipsy.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.alerts.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.colorpicker.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/wizards/jquery.form.wizard.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/wizards/jquery.validate.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.breadcrumbs.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.collapsible.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.ToTop.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.listnav.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.sourcerer.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.timeentry.min.js"></script>
+<script type="text/javascript" src="<?php echo base_url();?>static/js/plugins/ui/jquery.prettyPhoto.js"></script>
+
+<script type="text/javascript" src="<?php echo base_url();?>static/js/custom.js"></script>
+
+</head>
+
+<body>
+
+<!-- Top navigation bar -->
+<div id="topNav">
+    <div class="fixed">
+        <div class="wrapper">
+            <div class="welcome"><a href="<?php echo base_url();?>" title=""><img src="<?php echo base_url();?>static/images/userPic.png" alt="" /></a><span>Hello <?php echo $this->tank_auth->get_fullname(); ?></span></div>
+            <div class="userNav">
+                <ul> 
+					<?php if (false && $this->tank_auth->get_group('slug') == 'student') ://edit for notifications ?>
+					<li><a href="<?php echo base_url('notifications');?>"><img src="<?php echo base_url();?>static/images/icons/topnav/messages.png" alt=""><span>Notifications</span><span class="numberTop"><?php /*echo $this->notification_model->count_unread($this->tank_auth->get_user_id());*/ ?></span></a></li>
+					<?php endif; ?>
+                    <?php if ($this->tank_auth->is_privileged('view_settings') && false) { //edit to enable settings?>
+					<li><a href="<?php echo base_url('settings');?>" title=""><img src="<?php echo base_url();?>static/images/icons/topnav/settings.png" alt="" /><span>Settings</span></a></li>
+					<?php } ?>
+					<li><a href="<?php echo base_url('profile');?>" title=""><img src="<?php echo base_url();?>static/images/icons/topnav/profile.png" alt="" /><span>Profile</span></a></li>
+					<li><a href="<?php echo base_url('auth/logout');?>" title=""><img src="<?php echo base_url();?>static/images/icons/topnav/logout.png" alt="" /><span>Logout</span></a></li>
+                </ul>
+            </div>
+            <div class="fix"></div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Main wrapper -->
+<div class="wrapper">
+	
+	<!-- Content -->
+    <div class="content" id="container">
+		<div class="title"><h5><?php echo $page_title; ?></h5></div>
+		<?php echo isset($message) && $message ? '<div class="nNote nWarning hideit"><p>'.$message.'</p></div>' : ''; ?>
+
+<a href="<?php echo base_url()."papers/" ?>" title="" class="basicBtn">Go Back</a>
+
+<!-- PAPER Start-->
+<div>
+
+</div>
+<div class="jumbotron">
+  		<div class="container text-center">
+            <h3>Tesla</h3>
+        </div><!-- End container -->
+    </div><!-- End jumbotron-->
+<section>
+	<div class="well">
+		<div class="container text-justify">
+        <h1 class="text-center text_underline"> Timer : <span id='timer'></span> </h1>
+        </div>
+        <br>
+        <div class="container text-justify">
+			<div class="main_div">
+			<table border="1">
+				<col width="1000">
+				<col width="300">
+				<tr>
+				<td height="250">
+					<div class="inner_div">
+					
+	     			
+					<form name="paper" id="paper" action="<?php echo base_url(); ?>papers/submit/<?php echo $paper['pid'];?>" method="POST">
+						<input type="hidden" name="pid" value="<?php echo $paper['pid']; ?>">
+						<?php $c=0?>
+						<?php foreach($questions as $key=>$value) {$c++;?>	
+							<div id="<?php echo "q".$c; ?>" style="display: none;">
+							
+                            <h3><?php echo "Q".$c."."; ?>&emsp;<?php echo $value['question']; ?></h3>
+							<?php if($value['image_url']) { ?><img src="<?php echo base_url();?>static/images/questions/<?php echo $value['image_url']; ?>" alt="Image Unavailable" float="left" width="50%" /></a><br/> <?php } ?>
+                            <br />
+							<label for="<?php echo "q".$c;?>op1"><input type="radio" id="<?php echo "q".$c;?>op1" name="<?php echo "qu".$value['qid'];?>" value="1">&emsp;&emsp;&emsp;<?php echo $value['option1'];?></label>
+                            <br /><br />
+							<label for="<?php echo "q".$c;?>op2"><input type="radio" id="<?php echo "q".$c;?>op2" name="<?php echo "qu".$value['qid'];?>" value="2">&emsp;&emsp;&emsp;<?php echo $value['option2'];?></label>
+                            <br /><br />
+							<label for="<?php echo "q".$c;?>op3"><input type="radio" id="<?php echo "q".$c;?>op3" name="<?php echo "qu".$value['qid'];?>" value="3">&emsp;&emsp;&emsp;<?php echo $value['option3'];?></label>
+                            <br /><br />
+							<label for="<?php echo "q".$c;?>op4"><input type="radio" id="<?php echo "q".$c;?>op4" name="<?php echo "qu".$value['qid'];?>" value="4">&emsp;&emsp;&emsp;<?php echo $value['option4'];?></label>
+                            <br /><br />
+
+                            
+
+							</div>
+						<?php } ?>
+					<!--<input type="submit" name="submit and exit" value="Submit">	-->
+					</form>
+					</div>
+					
+				</td>
+
+					</div>
+				</tr>
+			</table>
+		</div>
+	</div>
+</section>
+<section>
+	<div class="well">
+		<div class="container text-justify">        			
+		</div>
+	</div>
+        
+    <br><br><br>
+</section>
+
+	
+
+	</div>    
+    <div class="fix"></div>
+</div>
+<script type="text/javascript">var site_url = '<?php echo base_url(); ?>';</script>
+<script type="text/javascript">var current_url = '<?php echo current_url(); ?>';</script>
+<!-- Footer -->
+<div id="footer">
+	<div class="wrapper">
+    	<span>&copy; Copyright <?php echo date("Y"); ?>. All rights reserved. </span>
+    </div>
+</div>
+</body>
+</html>
